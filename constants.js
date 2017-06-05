@@ -1,18 +1,21 @@
-﻿var CookieLiveTime = 30000;
-var VKAuthPath = 'https://oauth.vk.com/authorize?client_id=6045856&display=page&redirect_uri=http://localhost:3333/authorization&scope=262144&response_type=code&v=5.64'
-var AuthUrl = '/authorization';
-var ShowUrl = '/show';
-var VKTokenPath = 'https://oauth.vk.com/access_token?client_id=6045856&client_secret=RgsMAaW3rPLru07Y5Y4N&redirect_uri=http://localhost:3333/authorization&code={code}'
-var CookieName = 'VKUserData';
-var VKGroupParh = 'https://api.vk.com/method/groups.get?user_id={id}&extended=1&count=1&v=5.64&access_token={token}';
-var VKWallPath ='https://api.vk.com/method/wall.get?owner_id=-{id}&count=5&v=5.64&&access_token={token}';
+﻿const COOKIE_LIVETIME = 30000;
+const COOKIE_NAME = 'VKUserData';
+const AUTHURL = '/authorization';
+const SHOWURL = '/show';
+
+const VK_AUTH_PATH = 'https://oauth.vk.com/authorize?client_id={id}&display=page&redirect_uri={rUrl}&scope=262144&response_type=code&v=5.64';
+const VK_TOKEN_PATH = 'https://oauth.vk.com/access_token';
+
+const VK_GROUP_PATH = 'https://api.vk.com/method/groups.get';
+const VK_WALL_PATH = 'https://api.vk.com/method/wall.get';
+
 module.exports = {
-    cookieLiveTime: CookieLiveTime,
-    cookieName: CookieName,
-    vkAuthPath: VKAuthPath,
-    vkGroupsPath:VKGroupParh,
-    vkTokenPath: VKTokenPath,
-    vkWallPath:VKWallPath,
-    authUrl: AuthUrl,
-    showUrl: ShowUrl
+    cookieLiveTime: COOKIE_LIVETIME,
+    cookieName: COOKIE_NAME,
+    vkAuthPath: VK_AUTH_PATH,
+    vkGroupsPath:VK_GROUP_PATH,
+    vkTokenPath: VK_TOKEN_PATH,
+    vkWallPath:VK_WALL_PATH,
+    authUrl: AUTHURL,
+    showUrl: SHOWURL
 }
