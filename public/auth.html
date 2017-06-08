@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>Авторизация</title>
+    <link rel="stylesheet" type="text/css" href="css/auth.css" />
+    <script src="js/bundle.js"></script>
+</head>
+<body>
+    <div  class ="parent" >
+        <h1>Вы не авторизованы</h1>
+		<p>Воспользуйтесь авторизацией ВКонтакте</p>
+         <a id="link_vk">
+            <img src="http://abali.ru/wp-content/uploads/2013/11/vk_logo_small_blue.png" />
+        </a>
+       <script>
+           (function (wnd) {
+               "use strict";
+               function run() {
+                   front.setVkAuthLink(document.getElementById('link_vk'));
+               }
+               run();
+           }(typeof window !== 'undefined' ? window : this));
+       </script>
+    </div>
+</body>
+</html>

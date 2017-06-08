@@ -1,0 +1,41 @@
+﻿body {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:14px;  
+}
+
+
+div.parent{
+    margin:0;
+    display: block; 
+    padding: 30px 50px;
+    border:1px solid #ede6e6;
+    width:500px;
+    margin:auto;
+    top:100px;
+    position:relative;
+}
+
+h1 {
+    margin:0;
+    color:#4b6c7e;
+    font-weight:500;
+    font-size:1.5em;   
+}
+
+p {
+    color:#4e848f;
+}
+
+a {    
+    cursor:pointer;
+    text-align:center;
+}
+   
+
+a img {
+    height:40px;
+    width:40px; 
+}
+

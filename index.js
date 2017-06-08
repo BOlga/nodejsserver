@@ -1,6 +1,6 @@
-﻿var server = require('./server.js');
-
-server.start(3000);
 
 
+server = require('./back/server.js');
+
+server.start(1000);
 

@@ -4,7 +4,12 @@
   "description": "test",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+	"start-dev": "",
+	"build-f": "set NODE_ENV=prod && webpack --config webpack.front.config.js",
+	"build-f-dev": "set NODE_ENV=dev && webpack --config webpack.front.config.js",
+	"build-s": "set NODE_ENV=prod && webpack --config webpack.server.config.js",
+	"build-s-dev": "set NODE_ENV=dev && webpack --config webpack.server.config.js"
   },
   "author": "Olga Bokova",
   "license": "ISC",
@@ -15,7 +20,8 @@
     "eslint-plugin-import": "^2.3.0",
     "express": "^4.15.3",
     "handlebars-dateformat": "^1.0.1",
-    "hbs": "^4.0.1"
+    "hbs": "^4.0.1",
+    "log4js": "^1.1.1"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
